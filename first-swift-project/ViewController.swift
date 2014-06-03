@@ -9,15 +9,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var newLabel : UILabel
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        labelToShow();
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func labelToShow() {
+        newLabel.text = "Hello";
     }
 
 
